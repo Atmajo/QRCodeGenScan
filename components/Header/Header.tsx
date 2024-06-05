@@ -13,7 +13,7 @@ const Header = () => {
     <div className="absolute flex top-0 w-screen justify-between items-center p-2">
       <h1>All QR</h1>
       <Link href={`${pathname === "/" ? "/qrscanner" : "/"}`}>
-        <Button>Qr Scanner</Button>
+        <Button>{`${pathname === "/" ? "Qr Scanner" : "Qr Generator"}`}</Button>
       </Link>
     </div>
   );
