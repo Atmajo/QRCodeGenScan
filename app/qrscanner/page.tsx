@@ -3,9 +3,9 @@
 import { Html5QrcodeScanner } from "html5-qrcode";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = (): JSX.Element => {
   const [scanResult, setScanResult] = useState<string | null>(null);
-
+  
   useEffect(() => {
     const scanner = new Html5QrcodeScanner(
       "reader",
@@ -42,4 +42,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

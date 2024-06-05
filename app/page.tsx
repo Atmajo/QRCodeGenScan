@@ -9,7 +9,7 @@ import { useState } from "react";
 
 export default function Home(): JSX.Element {
   let qrCode;
-
+  
   const [value, setValue] = useState<string>("");
   const [qr, setQr] = useState<string>("");
 
